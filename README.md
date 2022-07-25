@@ -47,11 +47,11 @@ DATA/
 ## Getting Start
 
 ### Train & Test
-Please first download the pretrained models to ``DATA/model-weight``.
+Please first download the pretrained [models](https://drive.google.com/drive/folders/1dBzx9Ows9YqNVwboUNMFBWLSl50Xwt28?usp=sharing) to ``DATA/model-weight``.
 
 To train the lightweight model ResNet18 on 1/8 partition of VOC2012, you need to specify some variables in `script.sh`, such as the path of data dir, the path of snapshot, and the output dir, etc. 
 
 ```shell
-$ cd ./exp.voc/voc8.mobilev2_deeplabv3plus
+$ cd ./exp.voc/voc8.resnet18_deeplabv3plus
 $ bash script.sh
 ```
