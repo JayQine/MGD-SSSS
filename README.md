@@ -6,7 +6,7 @@ Albeit with varying degrees of progress in the field of Semi-Supervised Semantic
 
 ## Method
 <div>
-	<img src="img/method.png" width="800" height="800">
+	<img src="imgs/method.png" width="800" height="800">
 </div>
 
 ## Installation
