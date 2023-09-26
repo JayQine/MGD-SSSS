@@ -55,3 +55,17 @@ To train the lightweight model ResNet18 on 1/8 partition of VOC2012, you need to
 $ cd ./exp.voc/voc8.resnet18_deeplabv3plus
 $ bash script.sh
 ```
+
+## Citation
+If you find this work useful in your method, you can cite the paper as below:
+
+```shell
+@inproceedings{qin2022multi,
+  title={Multi-granularity distillation scheme towards lightweight semi-supervised semantic segmentation},
+  author={Qin, Jie and Wu, Jie and Li, Ming and Xiao, Xuefeng and Zheng, Min and Wang, Xingang},
+  booktitle={European Conference on Computer Vision},
+  pages={481--498},
+  year={2022},
+  organization={Springer}
+}
+```
