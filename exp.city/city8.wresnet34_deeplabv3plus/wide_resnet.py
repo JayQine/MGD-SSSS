@@ -723,11 +723,8 @@ def wide_resnet18_2(pretrained_model=None, **kwargs):
     pretrained = False
     model = _create_resnet('wide_resnet18_2', pretrained, **model_args)
 
-    pretrained_ckpt = "../../DATA/pytorch-weight/model_best.pth.tar"
-    model_dict = torch.load(pretrained_ckpt)["state_dict"]
-    
     if pretrained_model is not None:
-        model.load_state_dict(model_dict, strict=True)
+        model.load_state_dict(pretrained_model, strict=True)
     return model
 
 @register_model
@@ -758,7 +755,7 @@ def wide_resnet34_2(pretrained_model=False, **kwargs):
     pretrained = False
     model = _create_resnet('wide_resnet34_2', pretrained, **model_args)
 
-    pretrained_ckpt = "../../DATA/pytorch-weight/checkpoint-200.pth.tar"
+    pretrained_ckpt = "../../DATA/model-weight/checkpoint-wres34.pth.tar"
     model_dict = torch.load(pretrained_ckpt)["state_dict"]
     
     if pretrained_model is not None:
